@@ -29,6 +29,10 @@ html {
   display: flex;
   font-size: 24px;
   gap: 8px;
+  position: relative;
+  top: -38px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .title {
@@ -43,10 +47,17 @@ html {
     padding-bottom: 66vh;
     width: 100%;
     transition:0.5sec;
+    margin-top: 90px;
     transform-origin:top;
-    transform:scaleX(1)
+    transform:scaleX(1);
+    cursor:alias;
 }
-
+.bannertitle{
+  position: relative;
+  opacity: 1;
+  margin-top: 68px;
+  font-size: 104px;
+}
 .branding {
   color: gray;
   transition:0.5sec;
@@ -90,6 +101,7 @@ html {
 }
 .image {
     transition: transform 0.5s;
+    cursor: pointer;
   }
   
   .image:hover {
@@ -124,20 +136,44 @@ html {
     position: relative;
     width: 116px;
     height: 116px;
+    flex-wrap: wrap;
+    align-content: center;
     display: flex;
     border-radius: 50%;
     border: 2px solid white;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .buttonText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    display: flex;
+    width: 100%;
     transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
   }
-  
+  .text .char {
+    display: inline-block;
+    -webkit-animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+            animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+    transition: all 0.25s calc(0.25s + var(--char-index) * 0.1s);
+  }
+  .text--enter [data-scroll='out'] .char {
+    opacity: 0;
+    -webkit-transform: translate(0, -150%);
+            transform: translate(0, -150%);
+  }
+  .text--enter .char {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .text--random [data-scroll='out'] .char {
+    -webkit-transform: translateX(-109%) translateY(-81%);
+            transform: translateX(-109%) translateY(-81%);
+  }
   .more {
     display: flex;
     align-items: center;
@@ -152,6 +188,7 @@ html {
     width: 136px;
     height:136px;
     font-size: 20px;
+    color:#fcfcfc;
   }
 
   .material-icons.md-18-jumbo {
@@ -164,8 +201,15 @@ html {
     transform: translateY(-50%);
     white-space: nowrap;
     left:400px; 
-    position: fixed;
+    
  
+  }
+  .space{
+    width:100%;
+    height:20vh;
+  }
+  i{
+    cursor: pointer;
   }
 .play{
     position: absolute;
@@ -190,6 +234,7 @@ html {
     text-align: center;
     -webkit-text-stroke: 1px white;
     white-space: nowrap;
+    height: 35vh;
     /* min-width: 100%; */
     animation: play 30s linear infinite;
  
@@ -338,6 +383,24 @@ html {
     transition:0.5sec;
     transform-origin:left;
     transform:scaleX(1);
+  animation: ani 0.5s ease-in;
+  transition-delay: 2s;
+  animation-delay: 2s;
+
+}
+/* .brandingproduct div,
+.brandingproduct span{
+  opacity: 0;
+  margin: 0;
+} */
+@keyframes ani {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(1.2);
+  }
 }
 .brandtitle{
   font-size: 59px;
@@ -346,8 +409,12 @@ html {
   color:#777575;
 }
 .branddiscription{
-font-size: 24px;
-color: #4b4949;
+
+  font-size: 22px;
+  color: #4b4949;
+  padding-right: 113px;
+  width: 27%;
+
 }
 .brandinfo{
   color:black;
@@ -357,13 +424,54 @@ color: #4b4949;
   display: flex;
   flex-direction: column;
 }
-.brandingproduct div::before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  transform-origin:right;
-  transition:0.5s;
+.fotter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 84px;
+
+}
+.about{
+  font-size: 20px;
+  color: #4b4949;
+}
+.work{
+  font-size: 100px;
+  color: #000;
+}
+.brunoTitle{
+  font-size: 100px;
+  color: #fd5a1e;
+}
+.brunoicon{
+  width: 72px;
+  position:relative;
+  height: 72px;
+
+  top: 42px;
+  display: flex;
+
+  border-radius: 50%;
+  background-color: #fd5a1e;
+  color: #fcfcfc;
+  align-items: center;
+  justify-content: center;
+}
+.bruno{
+  display: flex;
+  gap:10px;
+
+}
+#icon {
+  font-size:50px;
+  font-weight: 10;
+  text-decoration-thickness: 10px;
+
+  transform: rotate(-45deg);
+}
+.brunoicon:hover{
+ transform: rotate(45deg);
+
 }
