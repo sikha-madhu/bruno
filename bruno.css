@@ -1,0 +1,369 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    
+    background-color: #fcfcfc;
+    transition: background-color 1s ease;
+    /* line-height: 1.6; */
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  /* padding-right: 20px; */
+  /* position: fixed; */
+  width: 100%;
+  height: fit-content;
+  gap: 73%;
+}
+.menu {
+  padding-top: 37px;
+  display: flex;
+  font-size: 24px;
+  gap: 8px;
+}
+
+.title {
+    font-size: 104px;
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    padding-left: 194px;
+    justify-content: flex-end;
+    float: none;
+    flex-shrink: 1;
+    padding-bottom: 66vh;
+    width: 100%;
+    transition:0.5sec;
+    transform-origin:top;
+    transform:scaleX(1)
+}
+
+.branding {
+  color: gray;
+  transition:0.5sec;
+  transform-origin:top;
+  transform:scaleX(1)
+}
+.development {
+  color: rgb(182, 180, 180);
+  transition:1.5sec;
+  transform-origin:top;
+  transform:scaleX(1)
+}
+.hifen {
+  color: #fd5a1e;
+  font-size: 180px;
+  display: flex;
+  transform: rotate(343deg);
+  top: -38px;
+  position: relative;
+  /* transition:0.5sec;
+  transform-origin:top;
+  transform:scaleX(1) */
+}
+.Marketing {
+  display: flex;
+  transition:0.5sec;
+  transform-origin:top;
+  transform:scaleX(1)
+}
+.cointainers {
+    max-width: 1000px;
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    flex-wrap: wrap;
+    gap: 44px;
+    height: fit-content;
+    padding-left: 40px;
+    margin: -15px 259px;
+    padding-top: 100vh;
+}
+.image {
+    transition: transform 0.5s;
+  }
+  
+  .image:hover {
+    transform: rotateX(20deg) rotateY(-20deg)scale(1.0);
+  }
+/* .imageCard{
+    transform-style: preserve-3d;
+    flex-wrap: wrap;
+} */
+.text{
+    height: 100vh;
+    width:100%;
+    }
+.panel{
+    display: flex;
+
+  height: fit-content;
+  display: flex;
+  align-items: center;
+
+}
+
+.color-white{
+    background: #fff;
+ }
+.color-black{
+   background: #000;
+}
+
+  
+  .moreButton {
+    position: relative;
+    width: 116px;
+    height: 116px;
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .more {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 64px;
+    padding-bottom: 380px;
+    margin: 33px;
+    color: #fff;
+  }
+  .moreButton:hover{
+    width: 136px;
+    height:136px;
+    font-size: 20px;
+  }
+
+  .material-icons.md-18-jumbo {
+    font-size: 165px;
+  }
+  .textCorosol{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    left:400px; 
+    position: fixed;
+ 
+  }
+.play{
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 205px;
+    line-height: 230px ;
+    color:white;
+
+    justify-content: space-evenly;
+    /* min-width: 100%; */
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    left: 50%;
+    /* padding-left: 81px; */
+    width: 100%;
+}
+.play span{
+    display: block;
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    white-space: nowrap;
+    /* min-width: 100%; */
+    animation: play 30s linear infinite;
+ 
+}
+@keyframes play {
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        transform:translate(-40%,0) ;
+    }
+}
+.showreel{
+    position: relative;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    /* min-width: 100%; */
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    left: 50%;
+    /* padding-left: 81px; */
+    width: 100%;
+   color: rgb(89, 86, 86);
+        font-size: 205px;
+        line-height: 230px ;
+        display:flex;
+        justify-content: space-evenly;
+        
+
+}
+.showreel span{
+    display: flex;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(136, 132, 132);
+    white-space: nowrap;
+    /* min-width: 100%; */
+    animation: showreel 30s linear infinite;
+
+}
+@keyframes showreel {
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        transform:translate(40%,0) ;
+    }
+}
+  .titleName{
+    font-size: 25px;
+    color: #b6b3b3;
+  }
+  .title1{
+    font-size: 75px;
+    color: #fcfcfc;
+    padding-top: 10px;
+    padding-bottom: 47px;
+}
+
+  
+  .titleShade{
+    color:#4b4949;
+  }
+  .content{
+    display: flex;
+    gap: 61px;
+    font-size: 21px;
+    color: #777575;
+
+  }
+.discription{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 160px;
+    padding: 0px 150px 0px 90px;
+
+}
+.ourculture{
+  font-size: 38px;
+    color: #fcfcfc;
+    /* float: right; */
+    display: flex;
+    width: 73%;
+    position: relative;
+    top: -34px;
+    justify-content: flex-end;
+
+}
+.underscore{
+  position: relative;
+    color: #fd5a1e;
+    top: -17px;
+    left: 18px;
+}
+.firstpara{
+  width:382%;
+}
+.hifenImg{
+  color: #fd5a1e;
+  display: flex;
+  width: 100%;
+  transform: scale(45.5);
+  line-height: 0;
+  top: -69px;
+  font-weight: 800;
+  font-size: 466px;
+  left: 12px;
+  height: 100px;
+  position: relative;
+  transform: skew(-19deg, -16deg);
+  justify-content: center;
+}
+
+
+/* 
+.hifenPeople{
+  transform: rotateX(30deg);
+} */
+.people{
+  padding-top: 40px;
+  display: flex;
+  overflow: hidden;
+
+}
+.people1{
+  left: -346px;
+  position: relative;
+}
+.people2{
+  position: relative;
+  left: -279px;
+}
+.people3{
+  position: relative;
+  left:-237px;
+}
+.brandingproduct{
+  display: flex;
+    gap: 40px;
+    width: 100%;
+    margin: 50px 90px 0px 90px;
+    align-items: center;
+    padding-top: 120px;
+    justify-content: space-evenly;
+    transition:0.5sec;
+    transform-origin:left;
+    transform:scaleX(1);
+}
+.brandtitle{
+  font-size: 59px;
+}
+.brandtitleshading{
+  color:#777575;
+}
+.branddiscription{
+font-size: 24px;
+color: #4b4949;
+}
+.brandinfo{
+  color:black;
+  font-size: 26px;
+}
+.logoinfo{
+  display: flex;
+  flex-direction: column;
+}
+.brandingproduct div::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transform-origin:right;
+  transition:0.5s;
+}
