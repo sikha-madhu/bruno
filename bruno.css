@@ -44,13 +44,13 @@ html {
     justify-content: flex-end;
     float: none;
     flex-shrink: 1;
-    padding-bottom: 66vh;
+    padding-bottom: 30vh;
     width: 100%;
     transition:0.5sec;
     margin-top: 90px;
     transform-origin:top;
     transform:scaleX(1);
-    cursor:alias;
+    cursor:context-menu;
 }
 .bannertitle{
   position: relative;
@@ -97,7 +97,7 @@ html {
     height: fit-content;
     padding-left: 40px;
     margin: -15px 259px;
-    padding-top: 100vh;
+    padding-top: 71vh;
 }
 .image {
     transition: transform 0.5s;
@@ -475,3 +475,168 @@ html {
  transform: rotate(45deg);
 
 }
+.parallax-container {
+  width: 100%;
+  min-height: 500vh;
+  padding-top:50px;
+  padding-left:120px;
+}
+
+
+/* .left-image, .right-image {
+  position: absolute;
+  top: 0;
+
+} */
+
+/* .left-image {
+
+  position: fixed;
+  top: 11%;
+  left: -29%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  
+}
+
+@keyframes rotate {
+  to {
+    transform: translateX(80%) translateY(0);
+  }
+} */
+
+.text{
+  display:flex;
+  position:fixed;
+  justify-content:center;
+
+  padding-top:40px;
+  opacity:1;
+  font-size:120px;
+  animation: text 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes text {
+  to {
+    
+    transform:scale(0.25);
+    opacity:0;
+   
+  }
+}
+
+.leftimg {
+position :fixed;
+  
+left:-100px;
+  top:-20px;
+  margin-top: -50px;
+  margin-left: -50px;
+ width: 150px;
+  height: 180px;
+  background:black;
+
+  animation: leftimg 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes leftimg {
+  to {
+    transform:translateX(100%) translateY(0);
+    transform:scale(1.5);
+    width:250px;
+    hight:380px;
+    top:140px;
+    left:400px;
+  }
+}
+.rightimg {
+position :fixed;
+  
+right:-150px;
+  top:-20px;
+  margin-top: -50px;
+  margin-left: -50px;
+ width: 150px;
+  height: 180px;
+  background:black;
+
+  animation: rightimg 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rightimg {
+  to {
+    transform:translateX(-100%) translateY(0);
+    transform:scale(1.5);
+    width:250px;
+    hight:380px;
+    top:140px;
+    right:400px;
+  }
+}
+
+
+
+/* .right-image { */
+  /* right: -10%; */
+  /* animation-name: rightimg;
+}
+
+.left-image, .right-image {
+  width: 450px;
+  height: 580px;
+  object-fit: cover;
+  opacity: 0.8;
+} */
+
+/* @scroll-timeline {
+  source:selector(.left-image)
+} */
+/* 
+.left-image {
+  transform: translateX(-20%) translateY(50%);
+}
+
+.right-image {
+  transform: translateX(20%) translateY(50%);
+} */
+/* @keyframes leftimg{
+  0%{
+    transform: translateX(-80%) translateY(0);
+  }
+  100%{
+    transform: translateX(80%) translateY(0);
+  }
+}
+@keyframes rightimg{
+  
+  0%{
+    transform: translateX(80%) translateY(0);
+  }
+  100%{
+    transform: translateX(-80%) translateY(0);
+  }
+
+
+} */
+
